@@ -6,6 +6,8 @@ HTML5 stopwatch app
 Author: Daniel 'MaTachi' Jonsson  
 License: [GNU GPL version 3 or later](LICENSE)
 
+![Screenshot](screenshot.jpg)
+
 Hosted version
 ==============
 
