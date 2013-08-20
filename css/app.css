@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'FeuraSans';
+  src: url('../fonts/FeuraSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf');
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(ellipse at center, rgba(49,136,191,1) 0%,rgba(18,84,145,1) 100%);
+  color: #fff;
+  font-family: FeuraSans, sans-serif;
+  font-size: 16px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  color: #ffa49e;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.5);
+}
+
+a:hover {
+  color: #e7ff9e;
+}
+
+[role=region] > header {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+[role=region] > header > h1 {
+  margin: 0;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.4);
+}
+
+[role=region] > footer {
+  background: #004580;
+  right: 0; bottom: 0; left: 0;
+  padding: 5px 0;
+  position: fixed;
+  text-align: center;
+}
+
+[role=region] > .content {
+  margin: 0 auto 50px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.timer {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.time-box {
+  background-color: #2a2a2a;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 2rem;
+  padding: 30px 10px;
+}
+
+.controls {
+  margin: 10px auto;
+}
+
+.controls button {
+  background-color: #2a2a2a;
+  border: 0;
+  color: #fff;
+  padding: 10px 0;
+  width: 80px;
+}
+
+.controls.running #reset-button, .controls.running #start-button {
+  display: none;
+}
+
+.controls.stopped #lap-button, .controls.stopped #stop-button {
+  display: none;
+}
+
+.laps {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.laps td:first-child {
+  font-size: 1rem;
+  width: 50px;
+}
+
+.laps td:last-child {
+  font-family: Roboto;
+}
