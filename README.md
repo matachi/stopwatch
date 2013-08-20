@@ -6,6 +6,12 @@ HTML5 stopwatch app
 Author: Daniel 'MaTachi' Jonsson  
 License: [GNU GPL version 3 or later](LICENSE)
 
+Hosted version
+==============
+
+Play with the app on
+[http://matachi.github.io/stopwatch](http://matachi.github.io/stopwatch)!
+
 Library dependency
 ==================
 
