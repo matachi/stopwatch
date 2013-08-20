@@ -1,0 +1,30 @@
+<section id="stopwatch" role="region">
+  <header>
+    <h1>Stopwatch</h1>
+  </header>
+  <article class="content">
+    <div class="timer">
+      <span class="time-box">{{ clock.elapsed.hours }}</span> :
+      <span class="time-box">{{ clock.elapsed.mins }}</span> :
+      <span class="time-box">{{ clock.elapsed.secs }}</span> .
+      <span class="time-box">{{ clock.elapsed.mils }}</span>
+    </div>
+    <div class="controls" ng-class="{running: clock.running, stopped: !clock.running}">
+      <button ng-click="clock.reset()" id="reset-button">Reset</button>
+      <button ng-click="toggle()" id="start-button">Start</button>
+      <button ng-click="clock.saveLap()" id="lap-button">Lap</button>
+      <button ng-click="toggle()" id="stop-button">Stop</button>
+    </div>
+    <table class="laps">
+      <tbody>
+        <tr ng-repeat="lap in clock.laps | orderBy:'time':true">
+          <td>{{ lap.name }}</td>
+          <td>{{ lap.time }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+  <footer>
+    <a href="#/about">About app</a>
+  </footer>
+</section>
