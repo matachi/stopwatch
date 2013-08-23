@@ -13,7 +13,9 @@ html, body {
 }
 
 body {
-  background: radial-gradient(ellipse at center, rgba(49,136,191,1) 0%,rgba(18,84,145,1) 100%);
+  background: radial-gradient(ellipse, rgba(49,136,191,1) 0%,rgba(18,84,145,1) 100%);
+  background: -moz-radial-gradient(ellipse, rgba(49,136,191,1) 0%,rgba(18,84,145,1) 100%);
+  background: -webkit-radial-gradient(ellipse, rgba(49,136,191,1) 0%,rgba(18,84,145,1) 100%);
   color: #fff;
   font-family: FeuraSans, sans-serif;
   font-size: 16px;
